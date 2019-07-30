@@ -1,0 +1,56 @@
+       __    ____     __  __    __    ___  ____  ____  ____ 
+      /__\  (  _ \   (  \/  )  /__\  / __)(_  _)( ___)(  _ \
+     /(__)\  )(_) )   )    (  /(__)\ \__ \  )(   )__)  )   /
+    (__)(__)(____/   (_/\/\_)(__)(__)(___/ (__) (____)(_)\_)
+
+---------------------------------------------------------------------
+
+[+] Description :
+-----------------.
+    Ce script regroupe un ensemble de fonctionnalités permettant à 
+    l’administrateur système d'effectuer des actions simples de 
+    manières fiable et rapides.
+    Le résultat de chaque commande peut être exporté en fichier CSV.
+    Veuillez noter que le csv contiendra plus d'informations que celles
+    affichées dans le résultat à l'écran.
+
+[+] Interface :
+---------------
+    L'interface utilisateur se divise en plusieurs sections. Chaque 
+    section possède une bannière de titre ou d'information (ligne colorée).
+
+[+] Sections :
+--------------
+    Il y a trois sections :
+
+    [1] LE MENU: Contient la liste des commandes disponibles . Se situe 
+        en haut de l'interface. Il possède une bannière au-dessus qui 
+        représente la barre de titre de la fenêtre principale
+
+    [2] LA CONSOLE: c'est la partie du milieu. Elle permet de visualiser 
+        le résultat des commandes. Il possède une bannière au-dessus qui 
+        affiche "Console" suivi du nom de la commande précédente. Ainsi 
+        qu'une bannière en dessous qui représente le pieds de page qui 
+        contient les notamment les "copyrights" et la "version"
+
+    [3] L'INVITE DE SAISIE: Section du bas. Elle permet à l'utilisateur 
+        de saisir ses choix.
+
+[+] Fonctionnement :
+--------------------
+    Ce script détecte le nom de domaine sur lequel il est exécuté automatiquement.
+    Chaque commande fait appel à une fonction stockée dans un module précis.
+    Les modules sont des fichiers librairies contenant plusieurs fonctions réparties
+    par catégories.
+    Ce script possède un fichier de configuration séparé du code lui permettant 
+    d'être configuré aisément sans toucher au code directement. Ce fichier d'aide 
+    est un fichier texte externe nommé hlp.txt dans le dossiers modules. Il peut 
+    être modifié si besoin
+    Certaines options seront exécutable au lancement du script via les arguments au 
+    démarrage. 
+    Exemples: 
+                ADMaster -disabledUsers
+                ADMaster -inactiveUsers
+                ADMaster -disabledGpo -export c:\temp\gpo_desactivees_17012017_10h28m42s.csv
+
+
