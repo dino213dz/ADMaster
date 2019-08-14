@@ -1,3 +1,6 @@
+[![License](https://img.shields.io/badge/license-GPLv2-green.svg)](https://github.com/dino213dz)
+![logo](https://avatars2.githubusercontent.com/u/34544107 "ADMaster by dino213dz")
+
 # DESCRIPTION:
 
  - Outil permettant d'effectuer les fréquentes tâches de maintenance rapidement.
@@ -21,7 +24,7 @@
  - Modifier les messages affichés à l'ecran
 
 
- - Ajouter une categorie:
+## Ajouter une categorie:
    - Pour ajouter une catégorie de menus (ensemble de liens)
      - Ouvrir le fichier "modules/cfg.ps1" 
      - Editer la variable "$admaster_categories" et ajoutez une entrée au tableau
@@ -29,10 +32,13 @@
    - Remarque:
      - L'ordre des categries est important car il sert d'index aux liens. La premiere etant le n° zero
 
- - Ajouter un lien:
+## Ajouter un lien:
      - Ouvrir le fichier "modules/cfg.ps1" 
      - Editer la variable "$admaster_liens" et ajoutez une entrée au tableau
      - Chaque entrée est un tableau également : @("Titre du lien", numero_index_categorie, 'NomFonction' )
-   - Remarque:
+### Remarque:
      - L'ordre des categories des liens est important. Chaque lien affiche sa caategorie si le lien précedent n'est pas de la meme categorie.
      - Si vous souhaitez avoir une seule categorie suivie de ses liens, il est necessaire que les categories se suivent.
+
+## Captures d'écran:
+![logo](http://dino213dz.online.fr/img/screenshot/ADMaster_1.0_Screenshot.jpg "ADMaster.sh 1.0")
